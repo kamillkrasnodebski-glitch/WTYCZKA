@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Tłumacz twittów - Pobierz rozszerzenie</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            max-width: 600px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+        }
+        
+        h1 {
+            color: #1a1a1a;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        
+        .features {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            color: #333;
+        }
+        
+        .feature-icon {
+            font-size: 24px;
+            margin-right: 15px;
+        }
+        
+        .price-section {
+            background: linear-gradient(135deg, #1DA1F2 0%, #0c7abf 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 30px 0;
+        }
+        
+        .price {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        .price-note {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .kofi-button {
+            background: #FF5E5B;
+            color: white;
+            border: none;
+            padding: 20px 50px;
+            font-size: 1.3em;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(255, 94, 91, 0.4);
+        }
+        
+        .kofi-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 94, 91, 0.6);
+        }
+        
+        .kofi-button::before {
+            content: "☕ ";
+        }
+        
+        .info-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: left;
+        }
+        
+        .info-box h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .info-box p {
+            color: #856404;
+            line-height: 1.6;
+        }
+        
+        .steps {
+            text-align: left;
+            margin: 30px 0;
+        }
+        
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+        
+        .step-number {
+            background: #1DA1F2;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        .step-content h4 {
+            margin-bottom: 5px;
+            color: #333;
+        }
+        
+        .step-content p {
+            color: #666;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo (użyj swojego logo) -->
+        <div class="logo">
+            <svg width="120" height="120" viewBox="0 0 128 128">
+                <circle cx="64" cy="64" r="60" fill="#1DA1F2"/>
+                <text x="64" y="80" font-family="Arial" font-size="48" font-weight="bold" fill="white" text-anchor="middle">X</text>
+            </svg>
+        </div>
+        
+        <h1>X Tłumacz twittów</h1>
+        <p class="subtitle">
+            Czytaj anglojęzyczne tweety po polsku i pisz po angielsku bez problemu.<br>
+            Rozszerzenie Chrome do dwukierunkowego tłumaczenia na X (Twitter).
+        </p>
+        
+        <!-- Funkcje -->
+        <div class="features">
+            <h3 style="margin-bottom: 20px; color: #1a1a1a;">🎯 Co zyskujesz:</h3>
+            <div class="feature">
+                <span class="feature-icon">⚡</span>
+                <span>Natychmiastowe tłumaczenie anglojęzycznych tweetów</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🌍</span>
+                <span>Tłumaczenie z angielskiego na polski</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">✍️</span>
+                <span>Tłumaczenie twoich tweetów z polskiego na angielski</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">💬</span>
+                <span>Tłumaczenie komentarzy w obie strony (PL↔EN)</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🎨</span>
+                <span>Wygląd zintegrowany z X.com</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🔒</span>
+                <span>Prywatność - wszystko lokalne</span>
+            </div>
+        </div>
+        
+        <!-- Cena -->
+        <div class="price-section">
+            <h2 style="margin-bottom: 10px;">Wesprzyj projekt i odbierz rozszerzenie</h2>
+            <div class="price">2€</div>
+            <p class="price-note">Jednorazowa wpłata • Dożywotni dostęp • Bez subskrypcji</p>
+        </div>
+        
+        <!-- Call to action -->
+        <a href="https://ko-fi.com/TWOJ_LINK_KOFI" 
+           class="kofi-button" 
+           target="_blank"
+           rel="noopener noreferrer">
+            Kup mi kawę i pobierz
+        </a>
+        
+        <!-- Jak to działa -->
+        <div class="info-box">
+            <h3>📝 Jak to działa?</h3>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Wpłać 2€ na Ko-fi</h4>
+                        <p>Kliknij przycisk powyżej i zostaw opcjonalną wiadomość z Twoim emailem</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Otrzymaj link do pobrania</h4>
+                        <p>W ciągu 24h dostaniesz email z bezpośrednim linkiem do rozszerzenia</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Zainstaluj i korzystaj</h4>
+                        <p>Jeden klik w Chrome Web Store i gotowe! Dożywotni dostęp.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FAQ -->
+        <div style="margin-top: 40px; text-align: left;">
+            <h3 style="margin-bottom: 20px; color: #1a1a1a;">❓ Często zadawane pytania</h3>
+            
+            <details style="margin: 15px 0; cursor: pointer;">
+                <summary style="font-weight: bold; padding: 10px; background: #f8f9fa; border-radius: 8px;">
+                    Czy to jednorazowa płatność?
+                </summary>
+                <p style="padding: 15px; color: #666;">
+                    Tak! Płacisz raz 2€ i masz dożywotni dostęp do rozszerzenia wraz ze wszystkimi przyszłymi aktualizacjami.
+                </p>
+            </details>
+            
+            <details style="margin: 15px 0; cursor: pointer;">
+                <summary style="font-weight: bold; padding: 10px; background: #f8f9fa; border-radius: 8px;">
+                    Jak szybko otrzymam link?
+                </summary>
+                <p style="padding: 15px; color: #666;">
+                    Zwykle w ciągu kilku godzin, maksymalnie 24h. Sprawdzaj email (również folder spam).
+                </p>
+            </details>
+        </div>
+        
+        <!-- Footer -->
+        <div style="margin-top: 50px; padding-top: 30px; border-top: 1px solid #eee; color: #999; font-size: 0.9em;">
+            <p>© 2025 X Tłumacz twittów • Kontakt: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="95e1e2faffd5f0f8f4fcf9bbf6faf8">[email&#160;protected]</a></p>
+            <p style="margin-top: 10px;">
+                <a href="#" style="color: #1DA1F2; text-decoration: none;">Polityka prywatności</a> • 
+                <a href="#" style="color: #1DA1F2; text-decoration: none;">Regulamin</a>
+            </p>
+        </div>
+    </div>
+    
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Tracking konwersji (opcjonalnie)
+        document.querySelector('.kofi-button').add
